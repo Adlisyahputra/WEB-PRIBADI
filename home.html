@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Pribadi Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #b4dff4;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        h1 {
+            color: #00796b;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s;
+        }
+        h2 {
+            color: #004d40;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 1s;
+        }
+        p {
+            color: #546e7a;
+            line-height: 1.8;
+        }
+        .highlight {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .content {
+            text-align: justify;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 1.5s;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #aaa;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .footer a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang di Website Pribadi Saya</h1>
+        <h2>Tentang Saya</h2>
+        <hr>
+        <p class="content">
+            Halo dan selamat datang di website pribadi saya! Saya sangat senang Anda berada di sini. Situs ini didedikasikan untuk berbagi perjalanan, pemikiran, dan proyek saya dalam dunia pengembangan web.
+        </p>
+       
+       
+        <div class="footer">
+            &copy; 2024, <a href="https://unpam.ac.id" target="_blank">Universitas Pamulang, Tangerang, Jawa Barat</a>
+        </div>
+    </div>
+</body>
+</html>

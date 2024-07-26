@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kontak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #83c3ed;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            animation: slideInFromLeft 1s ease-out;
+        }
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .contact-info div {
+            flex-basis: 30%;
+            text-align: center;
+        }
+        .contact-info div img {
+            max-width: 100px;
+            margin-bottom: 10px;
+            animation: rotateIn 1s ease-in-out;
+        }
+        @keyframes rotateIn {
+            from { transform: rotate(-360deg); opacity: 0; }
+            to { transform: rotate(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kontak Kami</h1>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Kirim</button>
+        </form>
+        
+        <div class="contact-info">
+            <div>
+                <img src="image/phone.png" alt="Telepon">
+                <p>+62 882 11748721</p>
+            </div>
+            <div>
+                <img src="image/email.png" alt="Email">
+                <p>adlisaputra869@gmail.com</p>
+            </div>
+            <div>
+                <img src="image/alamat.png" alt="Alamat">
+                <p>Jl. Masjid Al-Muflihun Bintaro Pesanggrahan</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

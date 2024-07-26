@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #b4dff4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            animation: slideInFromLeft 1s ease-out;
+        }
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .profile-card {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            animation: slideInFromRight 1s ease-out;
+        }
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .profile-image {
+            flex: 1;
+            text-align: center;
+        }
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-image img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        .profile-details {
+            flex: 2;
+            padding-left: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .profile-details h2 {
+            color: #444;
+            margin-top: 0;
+            transition: color 0.3s ease;
+        }
+        .profile-details p {
+            color: #777;
+        }
+        .profile-details h2:hover {
+            color: #1e90ff;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #aaa;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .footer a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Profil</h1>
+        <hr>
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="image/avatar.png" alt="Profile Image">
+            </div>
+            <div class="profile-details">
+                <h2>Adli Syahputra</h2>
+                <p>Saya seorang Mahasiswa yang berdedikasi untuk membuat website yang indah dan fungsional. Saya memiliki Skill dalam pengembangan web dan selalu berusaha untuk mempelajari teknologi terbaru.</p>
+            </p>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2024, <a href="https://unpam.ac.id" target="_blank">Universitas Pamulang, Tangerang, Jawa Barat</a>
+        </div>
+    </div>
+</body>
+</html>
